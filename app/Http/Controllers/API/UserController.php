@@ -28,6 +28,19 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request,[
+            'firstName' => 'required|string|max:191',
+            'lastName' => 'required|string|max:191',
+            'name' => 'required|string|max:191',
+            'email' => 'required|email|unique:users|max:191',
+             'phone' => 'required|numeric|min:11',
+             'location' => 'required|string|max:191',
+             'type' => 'required|',
+             
+            
+
+        ]);
+
         return User::create([ 
             'firstName' => $request['firstName'],
             'name' => $request['name'],
@@ -48,9 +61,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function profile()
     {
-        //
+        return auth('api')->user();
     }
 
     /**
@@ -62,8 +75,34 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+       
+
+        $user = User::findOrFail($id);
+
+        $this->validate($request,[
+            'firstName' => 'required|string|max:191',
+            'lastName' => 'required|string|max:191',
+            'name' => 'required|string|max:191',
+            'email' => 'required|email|max:191|unique:users,email,'.$user->id,
+             'phone' => 'required|numeric|min:11',
+             'country' => 'required|string|max:191',
+             'password' => 'sometimes|password|min:6',
+             'type' => 'required|',
+             
+            
+
+        ]);
+
+        $user->update($request->all());
+    
+
+    
+
+        return ['message' => 'updated successful'];
     }
+
+
+    
 
     /**
      * Remove the specified resource from storage.

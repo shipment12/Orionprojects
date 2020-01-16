@@ -55,13 +55,14 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 v-show="editMode" class="modal-title" id="exampleModalScrollableTitle">Update User</h5>
+        <h5 v-show="!editMode" class="modal-title" id="exampleModalScrollableTitle">Create User</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
 
-       <form @submit.prevent="createUser">
+       <form @submit.prevent="editMode? UpdateUser() :createUser()">
       <div class="modal-body">
 
 
@@ -129,7 +130,8 @@
       
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Create</button>
+        <button v-show='editMode' type="submit" class="btn btn-success">Update</button>
+        <button v-show='!editMode' type="submit" class="btn btn-primary">Create</button>
       </div>
       </div>
   </form>
@@ -149,8 +151,10 @@
     export default {
         data(){
             return{
+              editMode:true,
                 users:{},
                 form: new Form({
+                    id: '',
                     name: '',
                     firstName: '',
                     lastName:'',
@@ -168,7 +172,31 @@
 
         methods:{
 
+          UpdateUser(){
+            this.$Progress.start();
+            
+            this.form.put('api/user/'+this.form.id)
+            
+            .then(()=>{
+              //successful
+              $('#exampleModalScrollable').modal('hide')
+              swal.fire(
+                    'Updated!',
+                    'User has been updated successfully.',
+                    'success'
+                    )
+              this.$Progress.finish()
+              Fire.$emit('AfterCreate');
+
+            })
+            
+            .catch(()=>{
+              this.$Progress.fail();
+            })
+          },
+
             editUser(user){
+              this.editMode=true;
                 this.form.reset();
                 $('#exampleModalScrollable').modal('show')
                 this.form.fill(user)
@@ -176,6 +204,7 @@
             },
 
             newModal(){
+                this.editMode = false;
                 this.form.reset()
                 $('#exampleModalScrollable').modal('show')
             },
