@@ -119,19 +119,19 @@
              <div class="row">
                  <div class="col-lg-3 col-md-3 wow bounceInLeft" data-wow-delay="1s"> 
                     <i class="fa fa-trophy" aria-hidden="true"></i>
-                     <h4>Certified Company</h4>
-                     <p>We are a certified company with legal grounds to do business.</p>
+                     <h4>Real Company</h4>
+                     <p>We are a real company with legal grounds to do business.</p>
                  </div>
                  <div class="col-lg-3 col-md-3 wow bounceInLeft" data-wow-delay="1.2s">
                      <i class="fa fa-coffee"></i> 
-                     <h4>2 Years Experienced</h4>
-                     <p>At Orion concepts we are two years hands-on experienced.</p>
+                     <h4>1 Year Experience</h4>
+                     <p>Though new in the digital market, we are determined to make an outstanding impact with your surport.</p>
                      
                 </div>
                  <div class="col-lg-3 col-md-3 wow bounceInLeft" data-wow-delay="1.4s">
                       <i class="fa fa-slideshare"></i>
                      <h4>Inovative Work</h4>
-                     <p>At orion we are inovative in our approach with different strategic methods.</p>
+                     <p>At Orion Tech Resources we are inovative in our approach to business with different strategic methods.</p>
                  </div>
                  <div class="col-lg-3 col-md-3 wow bounceInLeft" data-wow-delay="1.6s">
                      <i class="fa fa-university" aria-hidden="true"></i>
@@ -285,9 +285,10 @@
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Contribute</a></li>
+             
+             
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Support</a></li>
             </ul>
