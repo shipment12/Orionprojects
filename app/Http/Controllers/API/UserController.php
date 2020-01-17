@@ -9,6 +9,12 @@ use Illuminate\support\Facades\Hash;
 
 class UserController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth:api');
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -53,6 +59,20 @@ class UserController extends Controller
             'password' => Hash::make($request['password']),
 
         ]);
+    }
+
+
+ /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function updateProfile(Request $request)
+    {
+       $user = auth('api')->user();
+       return $request->photo;
+    //    return ['message', 'successful'];
     }
 
     /**

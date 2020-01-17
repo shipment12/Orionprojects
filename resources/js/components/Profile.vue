@@ -76,7 +76,7 @@
                                     <label for="inputName" class="col-sm-2 control-label">First Name</label>
 
                                     <div class="col-sm-12">
-                                    <input type=""  class="form-control" id="inputName" placeholder="First Name" >
+                                    <input v-model="form.firstName" type=""  class="form-control" id="inputName" placeholder="First Name" >
                                     
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
                                 <div class="form-group">
                                     <label for="photo" class="col-sm-2 control-label">Profile Photo</label>
                                     <div class="col-sm-12">
-                                        <input  type="file"  name="photo" class="form-input">
+                                        <input  type="file" @change="UploadPhoto" name="photo" class="form-input">
                                     </div>
 
                                 </div>
@@ -145,7 +145,7 @@
 
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-12">
-                                    <button @click.prevent="updateInfo" type="submit" class="btn btn-success">Update</button>
+                                    <button @click.prevent="updateInfo()" type="submit" class="btn btn-success">Update</button>
                                     </div>
                                 </div>
                                 </form>
@@ -180,6 +180,28 @@ export default {
                     photo:'',
                     password:'',
             })
+        }
+    },
+
+    methods:{
+        updateInfo(){
+            this.form.put('api/profile')
+            .then(()=>{
+
+            })
+            .catch(()=>{
+
+            })
+        },
+        UploadPhoto(e){
+            // console.log('uploading');
+            let file = e.target.files[0];
+            let reader = new FileReader();
+            reader.onloadend = (file)=>{
+                // console.log('RESULT', reader.result)
+                this.form.photo= reader.result;
+            }
+          console.log(reader.readAsDataURL(file));
         }
     },
 

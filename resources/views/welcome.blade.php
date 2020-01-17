@@ -48,11 +48,11 @@
       </li>
       </router-link>
 
-    <router-link to='/publishersignup'>
+    <!-- <router-link to='/publishersignup'>
       <li class="nav-item">
         <a class="nav-link" href="#">Publisher</a>
       </li>
-    </router-link>
+    </router-link> -->
 
       <li class="nav-item">
         <a class="nav-link" href="#">Blog</a>

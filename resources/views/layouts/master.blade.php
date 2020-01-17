@@ -13,7 +13,8 @@
 <div class="wrapper" id='app'>
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-black navbar-inverse" style="
+    background-color: darkslategrey;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -43,7 +44,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="../img/orion.png" alt="orion" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Orion Concept</span>
+      <span class="brand-text font-weight-light" style="font-size: large;">Orion Tech Resources</span>
     </a>
 
     <!-- Sidebar -->
@@ -51,11 +52,14 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="/img/profile/profileImg2.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">
+          <a href="#" class="d-block"style="font-size: large;">
           {{ Auth::user()->type }}
+          </a>
+          <a href="#" class="d-block">
+          {{ Auth::user()->name }}
           </a>
         </div>
       </div>
@@ -106,6 +110,16 @@
           
             </ul>
           </li>
+          <li class="nav-item">
+             <router-link to='/developer' class="nav-link">
+              <i class="nav-icon fas fa-cogs"></i>
+               <p>
+               Developer
+              
+            </p>
+            </router-link>
+          </li>  
+
           <li class="nav-item">
              <router-link to='/profile' class="nav-link">
               <i class="nav-icon fas fa-user"></i>
