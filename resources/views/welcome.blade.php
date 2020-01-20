@@ -81,23 +81,25 @@
   </div>
 </nav>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-    <img src="img/8.jpg"  class="d-block w-100" alt="...">
+      <img class="d-block w-100" src="img/8.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img src="img/6.jpg" class="d-block w-100" alt="...">
+      <img class="d-block w-100" src="img/6.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img src="img/5.jpg" class="d-block w-100" alt="...">
+      <img class="d-block w-100" src="img/5.jpg" alt="Third slide">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -180,6 +182,7 @@
                 <h4>John Doe</h4>
                 <b>CEO and Founder</b>
                 <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+              
                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>

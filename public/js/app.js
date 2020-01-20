@@ -2183,11 +2183,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       editMode: true,
       users: {},
+      errors: {},
       form: new Form({
         id: '',
         name: '',
@@ -44152,6 +44156,12 @@ var render = function() {
                       ])
                     ]),
                     _vm._v(" "),
+                    _vm.errors.lastName
+                      ? _c("span", { staticClass: "red--text" }, [
+                          _vm._v(_vm._s(_vm.errors.lastName[0]))
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
                     _c("div", { staticClass: "form-group row" }, [
                       _c("div", { staticClass: "col-sm-12" }, [
                         _c("input", {
@@ -44211,7 +44221,13 @@ var render = function() {
                             }
                           }
                         })
-                      ])
+                      ]),
+                      _vm._v(" "),
+                      _vm.errors.phone
+                        ? _c("span", { staticClass: "red--text" }, [
+                            _vm._v(_vm._s(_vm.errors.phone[0]))
+                          ])
+                        : _vm._e()
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "form-group row" }, [

@@ -85,7 +85,9 @@
           <input v-model="form.lastName"
            :class="{ 'is-invalid': form.errors.has('lastName')}"  type="text" class="form-control" id="inputLastName" placeholder="Last Name">
           </div>
+          
     </div>
+     <span class="red--text" v-if="errors.lastName">{{errors.lastName[0]}}</span>
 
     <div class="form-group row">
           <div class="col-sm-12">
@@ -99,6 +101,7 @@
           <input v-model="form.phone"
            :class="{ 'is-invalid': form.errors.has('phone')}"  type="text" class="form-control" id="inputPhone" placeholder="Phone">
           </div>
+           <span class="red--text" v-if="errors.phone">{{errors.phone[0]}}</span>
     </div>
 
     <div class="form-group row">
@@ -153,6 +156,7 @@
             return{
               editMode:true,
                 users:{},
+                errors:{},
                 form: new Form({
                     id: '',
                     name: '',

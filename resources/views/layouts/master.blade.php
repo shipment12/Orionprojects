@@ -9,19 +9,27 @@
   <link rel="stylesheet" href="/css/app.css">
 </head>
 
-<body class="sidebar-mini" style="height: auto;">
+<body class="sidebar-mini sidebar-collapse" style="height: auto;">
+
 <div class="wrapper" id='app'>
+
+
+
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-black navbar-inverse" style="
     background-color: darkslategrey;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+      <li class="nav-item" style="float-left;">
+        <a class="nav-link" data-slide="true" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
       </li>
      
     </ul>
+    
+
+
+
 
     <!-- SEARCH FORM -->
     <form class="form-inline ml-3">
@@ -34,6 +42,9 @@
         </div>
       </div>
     </form>
+
+
+    
 
    
   </nav>
@@ -153,7 +164,7 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper" style="min-height: 285px;">
+  <div class="content-wrapper"  style="min-height: 285px;">
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
@@ -190,3 +201,8 @@
 
 
 </body>
+
+
+
+
+

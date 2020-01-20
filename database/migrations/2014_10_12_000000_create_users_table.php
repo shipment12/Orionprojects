@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('lastName');
             $table->string('email')->unique();
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('country');
             $table->string('type')->default('user');
             $table->string('photo')->default('profile.png');

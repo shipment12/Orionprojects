@@ -39,7 +39,7 @@ class UserController extends Controller
             'lastName' => 'required|string|max:191',
             'name' => 'required|string|max:191',
             'email' => 'required|email|unique:users|max:191',
-             'phone' => 'required|numeric|min:11',
+            'phone' => 'required|string|min:8|max:11',
              'country' => 'required|string|max:191',
              'type' => 'required|',
              
@@ -104,7 +104,7 @@ class UserController extends Controller
             'lastName' => 'required|string|max:191',
             'name' => 'required|string|max:191',
             'email' => 'required|email|max:191|unique:users,email,'.$user->id,
-             'phone' => 'required|numeric|min:11',
+            'phone' => 'required|string|min:8|max:11',
              'country' => 'required|string|max:191',
              'password' => 'sometimes|password|min:6',
              'type' => 'required|',
