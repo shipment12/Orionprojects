@@ -67,8 +67,9 @@
                                     <label for="inputName" class="col-sm-2 control-label">Middle Name</label>
 
                                     <div class="col-sm-12">
-                                    <input  v-model="form.name" type=""  class="form-control" id="inputName" placeholder="Middle Name" >
+                                    <input  v-model="form.name" type=""  class="form-control" id="inputName" placeholder="Middle Name" :class="{ 'is-invalid': form.errors.has('name') }">
                                     
+                                     <has-error :form="form" field="name"></has-error>
                                     </div>
                                 </div>
 
@@ -76,8 +77,9 @@
                                     <label for="inputName" class="col-sm-2 control-label">First Name</label>
 
                                     <div class="col-sm-12">
-                                    <input v-model="form.firstName" type=""  class="form-control" id="inputName" placeholder="First Name" >
+                                    <input v-model="form.firstName" type=""  class="form-control" id="inputName" placeholder="First Name" :class="{ 'is-invalid': form.errors.has('firstName') }" >
                                     
+                                     <has-error :form="form" field="firstName"></has-error>
                                     </div>
                                 </div>
 
@@ -85,8 +87,9 @@
                                     <label for="inputName" class="col-sm-2 control-label">Last Name</label>
 
                                     <div class="col-sm-12">
-                                    <input  v-model="form.lastName" type=""  class="form-control" id="inputName" placeholder="Last Name" >
+                                    <input  v-model="form.lastName" type=""  class="form-control" id="inputName" placeholder="Last Name" :class="{ 'is-invalid': form.errors.has('lastName') }">
                                     
+                                     <has-error :form="form" field="lastName"></has-error>
                                     </div>
                                 </div>
 
@@ -94,8 +97,9 @@
                                     <label for="inputEmail" class="col-sm-2 control-label">Email</label>
 
                                     <div class="col-sm-12">
-                                    <input  v-model="form.email" type="email"  class="form-control" id="inputEmail" placeholder="Email" >
+                                    <input  v-model="form.email" type="email"  class="form-control" id="inputEmail" placeholder="Email" :class="{ 'is-invalid': form.errors.has('email') }" >
                                      
+                                      <has-error :form="form" field="email"></has-error>
                                     </div>
                                 </div>
 
@@ -103,8 +107,9 @@
                                     <label for="inputNumber" class="col-sm-2 control-label">Phone Number</label>
 
                                     <div class="col-sm-12">
-                                    <input  v-model="form.phone" type="number"  class="form-control" id="inputNumber" placeholder="Phone Number" >
+                                    <input  v-model="form.phone" type="number"  class="form-control" id="inputNumber" placeholder="Phone Number" :class="{ 'is-invalid': form.errors.has('phone') }" >
                                      
+                                      <has-error :form="form" field="phone"></has-error>
                                     </div>
                                 </div>
 
@@ -113,9 +118,10 @@
                                     <label for="inputAddress" class="col-sm-2 control-label">Country</label>
 
                                     <div class="col-sm-12">
-                                    <input  v-model="form.country" type="text"  class="form-control" id="inputAddress" placeholder="Country" >
-                                     
+                                    <input  v-model="form.country" type="text"  class="form-control" id="inputAddress" placeholder="Country" :class="{ 'is-invalid': form.errors.has('country') }" >
+                                      <has-error :form="form" field="country"></has-error>
                                     </div>
+                                    
                                 </div>
 
 
@@ -137,8 +143,11 @@
                                         class="form-control"
                                         id="password"
                                         placeholder="password"
+                                        v-model="form.password"
+                                        :class="{ 'is-invalid': form.errors.has('password') }"
                                        
                                     >
+                                    <has-error :form="form" field="password"></has-error>
                                      
                                     </div>
                                 </div>
@@ -185,24 +194,39 @@ export default {
 
     methods:{
         updateInfo(){
+            
+            this.$Progress.start();
             this.form.put('api/profile')
+            
             .then(()=>{
-
+            this.$Progress.finnish();
             })
             .catch(()=>{
-
+                this.$Progress.fail();
             })
         },
         UploadPhoto(e){
             // console.log('uploading');
             let file = e.target.files[0];
+            let limit = 1024 * 1024 * 2;
+            
             let reader = new FileReader();
-            reader.onloadend = (file)=>{
+            if(file['size'] < limit ){
+                 reader.onloadend = (file)=>{
                 // console.log('RESULT', reader.result)
                 this.form.photo= reader.result;
             }
-          console.log(reader.readAsDataURL(file));
+          reader.readAsDataURL(file);
+        }else{
+            swal.fire({
+                        type: 'error',
+                        title: 'Oops...',
+                        text: 'You are uploading a large file',
+                    })
+                   
         }
+            }
+           
     },
 
     created(){
