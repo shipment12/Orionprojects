@@ -22,3 +22,7 @@ Route::get('/{any?}', function (){
     return view('home');
 })->where('any', '^(?!api\/)[\/\w\.-]*');
 
+Route::post('/', 'MailSendController@send');
+
+
+

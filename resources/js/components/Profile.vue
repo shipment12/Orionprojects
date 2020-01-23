@@ -8,11 +8,11 @@
                 <div class="card card-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header text-white" style="background-image:url('./img/profile background/profile.jpg')">
-                    <h3 class="widget-user-username">Elizabeth</h3>
-                    <h5 class="widget-user-desc">Tyroon</h5>
+                    <h3 class="widget-user-username">{{ getProfilefirstName() }}</h3>
+                    <h5 class="widget-user-desc">{{ getProfilelastName() }}</h5>
                 </div>
                 <div class="widget-user-image">
-                    <img class="img-circle elevation-3" src="/img/profile/profileImg2.png" style="size:2px;" alt="">
+                    <img class="img-circle elevation-3" :src="getProfilePhoto()" style="size:2px;" alt="">
                     
                 </div>
                 <div class="card-footer">
@@ -193,16 +193,38 @@ export default {
     },
 
     methods:{
+        // getProfilePhoto(){
+        //     return "img/profile/" + this.form.photo
+        // },
+        getProfilefirstName(){
+          return  this.form.firstName;
+        },
+        getProfilelastName(){
+            return this.form.lastName;
+        },
+        getProfilePhoto() {
+        let prefix = (this.form.photo.match(/\//) ? '' : '/img/profile/');
+        return prefix + this.form.photo;
+        },
         updateInfo(){
             
             this.$Progress.start();
             this.form.put('api/profile')
             
+            
             .then(()=>{
+                swal.fire(
+                    'Updated!',
+                    'User has been updated successfully.',
+                    'success'
+                    )
             this.$Progress.finnish();
+             
+           
             })
             .catch(()=>{
                 this.$Progress.fail();
+               
             })
         },
         UploadPhoto(e){

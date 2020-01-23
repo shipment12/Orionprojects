@@ -21,6 +21,9 @@ Vue.component(AlertError.name, AlertError)
 window.Form = Form; 
 
 import VueRouter from 'vue-router'
+import Gate from './Gate.js';
+
+Vue.prototype.$gate = new Gate(window.user);
 
 Vue.use(VueRouter)
 
@@ -72,8 +75,9 @@ const options = {
 let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
     { path: '/developer', component: require('./components/Developer.vue').default },
-    { path: '/profile', component: require('./components/Profile.vue').default },
     { path: '/users', component: require('./components/User.vue').default },
+    { path: '/profile', component: require('./components/Profile.vue').default },
+    
   ]
 
 

@@ -229,31 +229,52 @@
 
 <div id="contact" class="contact" data-index="3">
     <div class="container">
+        @if(count($errors) > 0)
+          <div class="alert alert-danger alert-block">
+          <button type="button" class="close" data-dissmiss="alert">x</button>
+          <ul>
+          @foreach($errors->all() as $error)
+          <li> {{$error}}</li>
+          @endforeach
+          </ul>
+          </div>
+        @endif
+
+        @if($message = Session::get('success'))
+
+        <div class="alert alert-success alert-dismissible">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Thanks!</strong> For contacting us
+        </div>
+        @endif
+            <form method = "post" action="{{url('/')}}">
+            {{csrf_field()}}
         
             <h2 class="wow fadeInUp">Contact</h2><span class="colorborder"></span>
-            <p class="wow fadeInUp" data-wow-delay="0.4">Lorem Ipsum passages, and more recently with desktop publishing software</p>
+            <p class="wow fadeInUp" data-wow-delay="0.4">send us a message to walk you through</p>
             <div class="row">
             <div class="col-lg-6 col-md-6">
                 <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
                     <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
+                    <input type="text" name="name" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
                 </div>
                 <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
                     <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                    <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+                    <input type="text" name="email" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
                 </div>
                 <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
                     <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
+                    <input type="text" name="phone" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="input-group wow fadeInUp" data-wow-delay="2s">
-                    <textarea name="" id="" cols="80" rows="6" class="form-control"></textarea>
+                    <textarea name="message" id="" cols="80" rows="6" class="form-control"></textarea>
                 </div>
                 <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit Your Message</button>
             </div>
         </div>
+        </form>
     </div>
 </div>
  

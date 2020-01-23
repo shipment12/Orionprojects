@@ -53,7 +53,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link">
+    <a href="/" class="brand-link">
       <img src="../img/orion.png" alt="orion" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light" style="font-size: large;">Orion Tech Resources</span>
     </a>
@@ -63,7 +63,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="/img/profile/profileImg2.png" class="img-circle elevation-2" alt="User Image">
+          <img src="img/profile/{{Auth::user()->photo}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block"style="font-size: large;">
@@ -94,7 +94,7 @@
           </li>  
 
 
-         
+         @can('isAdmin')
 
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link">
@@ -112,15 +112,13 @@
                   <p>Users</p>
                 </router-link>
               </li>
-
-             
-
-          
-
-
           
             </ul>
           </li>
+
+          @endcan
+
+          @can('isAdmin')
           <li class="nav-item">
              <router-link to='/developer' class="nav-link">
               <i class="nav-icon fas fa-cogs"></i>
@@ -130,6 +128,7 @@
             </p>
             </router-link>
           </li>  
+          @endcan
 
           <li class="nav-item">
              <router-link to='/profile' class="nav-link">
@@ -140,6 +139,8 @@
             </p>
             </router-link>
           </li>  
+
+          
 
 
           <a href="#" class="nav-link" href="{{ route('logout') }}"
@@ -180,6 +181,13 @@
    
   </div>
   <!-- /.content-wrapper -->
+  @auth
+  <script>
+   window.user = @json(auth()->user())
+  </script>
+ 
+
+  @endauth
 
 
   <!-- Main Footer -->
