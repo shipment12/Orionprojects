@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
 
@@ -230,8 +231,8 @@
 <div id="contact" class="contact" data-index="3">
     <div class="container">
         @if(count($errors) > 0)
-          <div class="alert alert-danger alert-block">
-          <button type="button" class="close" data-dissmiss="alert">x</button>
+        <div class="alert alert-danger alert-dismissible">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
           <ul>
           @foreach($errors->all() as $error)
           <li> {{$error}}</li>
