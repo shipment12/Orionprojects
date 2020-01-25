@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\SendMail;
+
 
 
 class MailSendController extends Controller
@@ -27,8 +27,16 @@ class MailSendController extends Controller
             
         );
 
-        Mail::to('udedborfavor@gmail.com')->send(new SendMail($data));
-        return back()->with('success', 'thanks for contacting us!');
+        // Mail::to('udedborfavor@gmail.com')->send(new SendMail($data));
+        // return back()->with('success', 'thanks for contacting us!');
+
+        Mail::send( 'dynamic_email_template', $data,  function($message) use ($data){
+            $message->from($data['email']);
+            $message->to('udedborfavor@gmail.com');
+            $message->subject($data['message']);
+
+         });
+         return back()->with('success', 'thanks for contacting us!');
 
 
     }
