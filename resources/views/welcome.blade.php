@@ -28,7 +28,7 @@
 <div id='app'>
 <nav class="navbar navbar-expand-lg navbar-light  fixed-top" >
 
-<a class="navbar-brand" href="#">Orion Concept</a>
+<a class="navbar-brand" href="#"><img class="img-circle elevation-3" src="img/orion_tech.png" style="size:2px;" alt="">Orion Tech Resources</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
