@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="boot/css/style.css">
     <link rel="stylesheet" href="boot/css/animate.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <script src="https://kit.fontawesome.com/e6f9fcf671.js" crossorigin="anonymous"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -132,7 +133,7 @@
                      
                 </div>
                  <div class="col-lg-3 col-md-3 wow bounceInLeft" data-wow-delay="1.4s">
-                      <i class="fa fa-slideshare"></i>
+                      <i class="fab fa-slideshare"></i>
                      <h4>Inovative Work</h4>
                      <p>At Orion Tech Resources we are inovative in our approach to business with different strategic methods.</p>
                  </div>
@@ -209,40 +210,40 @@
                 <b>CEO and Founder</b>
                 <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
               
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="col-lg-3 col-md-3  wow fadeInLeft"  data-wow-delay="1.6s">
                 <img src="img/538321.png" class="img-circle" alt="">
                 <h4>John Doe</h4>
                 <b>CEO and Founder</b>
                 <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="col-lg-3 col-md-3  wow fadeInLeft"  data-wow-delay="1.2s">
                 <img src="img/538321.png" class="img-circle" alt="">
                 <h4>John Doe</h4>
                 <b>CEO and Founder</b>
                 <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="col-lg-3 col-md-3  wow fadeInLeft" 0.8>
                 <img src="img/538321.png" class="img-circle" alt="">
                 <h4>John Doe</h4>
                 <b>CEO and Founder</b>
                 <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
@@ -356,10 +357,10 @@
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
             </ul>
           </div>
         </div>
