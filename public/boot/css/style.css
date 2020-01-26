@@ -20,7 +20,11 @@ navbar-light .navbar-nav .action > .nav-link, .navbar-light .navbar-nav .nav-lin
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: brown
+    color: brown;
+    display:inline-block;
+    padding:0.9em 0.8em;
+    
+    border-radius: 4px;
 }
 .navbar-nav{
     text-align: center;
@@ -31,6 +35,7 @@ navbar-light .navbar-nav .action > .nav-link, .navbar-light .navbar-nav .nav-lin
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
     color: rgb(236, 8, 8) !important;
+    background-color:rgb(200, 189, 189);
 }
 
 .w-100{
@@ -107,6 +112,10 @@ navbar-light .navbar-nav .action > .nav-link, .navbar-light .navbar-nav .nav-lin
 .services{
     padding:80px 0 80px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
 }
 
 .services h1,
@@ -339,6 +348,42 @@ navbar-light .navbar-nav .action > .nav-link, .navbar-light .navbar-nav .nav-lin
 
 }
 
+
+/* PUBLISHER */
+
+.publishers {
+  padding:20px 0 20px;
+  text-align: center
+}
+.publishers h1,
+.publishers h4{
+  color: #4c4c4c;
+   margin:20px 0 20px;
+  
+}
+
+
+
+.publishers p{
+  color: #737373;
+  font-size: 14px;
+  text-align:left
+}
+
+.publishers .description{
+  text-align:center
+}
+
+.publishers i{
+  height:30px;
+  width: 30px;
+  font-size:30px;
+  
+
+  color: rgb(231, 5, 5);
+
+}
+
 .colorborder {
     background: #ccc none repeat scroll 0 0;
     display: block;
@@ -470,4 +515,11 @@ navbar-light .navbar-nav .action > .nav-link, .navbar-light .navbar-nav .nav-lin
 
 
 
+.container{
+  width:100%;
+  height:100%;
+ 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 

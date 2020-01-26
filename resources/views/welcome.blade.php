@@ -22,13 +22,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
    
 <!--NAVIGATION-->
 <div id='app'>
 <nav class="navbar navbar-expand-lg navbar-light  fixed-top" >
 
-<a class="navbar-brand" href="#"><p><img class="img-circle elevation-3" src="img/orion_tech.png" style="size:2px;" alt="">Orion Tech</p></a>
+<a class="navbar-brand" href="#"><p><img class="img-circle elevation-3" src="img/orion_tech.png" style="size:2px;" alt="">  Orion Tech</p></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -36,35 +36,35 @@
     
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a data-page="home" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a  class="nav-link" href="#carouselExampleFade">Home <span class="sr-only">(current)</span></a>
       </li>
       
       <li class="nav-item">
-        <a data-page="about" class="nav-link" href="#">About</a>
+        <a  class="nav-link"  href="{{url('#services')}}" data-anchor="#services">About</a>
       </li>
 
-      <router-link to='/advertisersignup'>
+      
       <li class="nav-item">
-        <a data-page="advertiser" class="nav-link" href="#">Advertiser</a>
+        <a  class="nav-link" href="{{url('#advertisers')}}" data-anchor="#advertisers">Advertiser</a>
       </li>
-      </router-link>
+      
 
-    <!-- <router-link to='/publishersignup'>
+    
       <li class="nav-item">
-        <a class="nav-link" href="#">Publisher</a>
+        <a class="nav-link" href="#publishers">Publisher</a>
       </li>
-    </router-link> -->
+    
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" href="#blog">Blog</a>
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="#">News</a>
+        <a class="nav-link" href="#news">News</a>
       </li>
 
        <li class="nav-item">
-        <a data-page="about" class="nav-link" href="#">Contact Us</a>
+        <a  class="nav-link" href="#contact">Contact Us</a>
       </li>
 <v-spacer></v-spacer>
         
@@ -113,9 +113,9 @@
 
      <!-- services -->
 
-     <div id="services" class="services" data-index="0">
+     <div id="services" class="services" >
          <div class="container">
-             <h2>About Our Company</h2><span class="colorborder"></span><br>
+             <h2 >About Our Company</h2><span class="colorborder"></span><br>
              <p>At Orion Concept, we employ various channels and modern technology in <br> 
                 a network environment to provide outstanding media solutions to <br> advertising
                 needs and promotions.</p>
@@ -149,7 +149,7 @@
      
                                           <!--ADVERTISER-->
 
-                                          <div id="advertisers" class="advertisers" data-index="1">
+      <div id="advertisers" class="advertisers">
          <div class="container">
              <h2>Advertisers</h2><span class="colorborder"></span> <br>
              
@@ -163,7 +163,32 @@
                        <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Updated and accurate data statistics and report system. </p>
                  </div>
                  <div class="col-lg-6 col-md-3">
-                    <img src="https://www.digitalconceptz.com/assets/images/free.jpg" alt="" class="img-responsive" width="400px" height="300px">
+                    <img src="img/title_advertisers.jpg" alt="" class="img-responsive" width="400px" height="300px">
+                     
+                </div>
+                
+             </div>
+         </div> <br> <br> <br>
+
+
+         
+                                          <!--Publishers-->
+
+      <div id="publishers" class="publishers">
+         <div class="container">
+             <h2>Publishers</h2><span class="colorborder"></span> <br>
+             
+             <div class="row">
+                 <div class="col-lg-6 col-md-3"> 
+                   
+                    <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Zero tolerance for fraud. </p>
+                     <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Promotional materials and result based strategies for high ROI.</p>
+                      <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Dedicated and experienced publishers with proven result to bring about campaign success. </p>
+                       <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Active account Managers to ensure quality assurance. </p>
+                       <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Updated and accurate data statistics and report system. </p>
+                 </div>
+                 <div class="col-lg-6 col-md-3">
+                    <img src="img/maxresdefault.jpg" alt="" class="img-responsive" width="400px" height="300px">
                      
                 </div>
                 
@@ -172,7 +197,7 @@
      
 
 
-     <div id="team" class="team" data-index="2">
+     <div id="team" class="team" >
     <div class="container">
         
         <h2>Meet Our Team</h2><span class="colorborder"></span><br>
@@ -298,10 +323,10 @@
           <div class="col-xs-6 col-md-3">
             <h6>Useful Links</h6>
             <ul class="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Advertiser</a></li>
-              <li><a href="#">Publisher</a></li>
+              <li><a href="#carouselExampleFade">Home</a></li>
+              <li><a href="#services">About</a></li>
+              <li><a href="#advertisers">Advertiser</a></li>
+              <li><a href="#publishers">Publisher</a></li>
               <li><a href="#">News</a></li>
               <li><a href="#">Blog</a></li>
             </ul>
@@ -428,6 +453,7 @@ By submitting and application to Affiliate Program, you affirm and acknowledge t
 
  
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="boot/js/wow.min.js"></script>
 <script>
 new WOW().init();
