@@ -88,10 +88,10 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="img/8.jpg" alt="First slide">
+      <img class="d-block w-100" src="img/cool-theme.3.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/6.jpg" alt="Second slide">
+      <img class="d-block w-100" src="img/cool-themes.1.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="img/5.jpg" alt="Third slide">
@@ -321,7 +321,7 @@
             <p class="text-justify"><i>Orion Tech Resources </i> is an initiative  to help digital marketers find the right market to invest their resources canfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
           </div>
 
-          <div class="col-xs-6 col-md-3">
+          <!-- <div class="col-xs-6 col-md-3">
             <h6>Useful Links</h6>
             <ul class="footer-links">
               <li><a href="#carouselExampleFade">Home</a></li>
@@ -331,9 +331,9 @@
               <li><a href="#">News</a></li>
               <li><a href="#">Blog</a></li>
             </ul>
-          </div>
+          </div> -->
 
-          <div class="col-xs-6 col-md-2">
+          <div class="col-xs-6 col-md-4">
             <h6>Quick Links</h6>
             <ul class="footer-links">
              
@@ -346,17 +346,16 @@
           </div>
 
 
-          <div class="col-xs-6 col-md-2">
-            <h6>Location</h6>
-            <a>  No 2 olaogun street gberigbe, Lagos</a>
+          <div class="col-xs-6 col-md-4">
+            <h6 style="text-align: left;">Contact Us</h6>
+            <p><i class="fa fa-home" aria-hidden="true"></i>  No 2 Olaogun street, Gberigbe, Lagos</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>  oriontechresources@gmail.com</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +234-0809858175</p>
+            
           </div>
         </div>
 
-        <div class="col-xs-6 col-md-4">
-            <h6>Phone</h6>
-            <i class="fas fa-phone-alt"></i>
-            <a>  +234-08139170220</a>
-          </div>
+    
         
 
         <hr style="color:red;">

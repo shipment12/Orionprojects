@@ -4,7 +4,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>AdminLTE 3 | Starter</title>
+  <title>Orion Tech Resources | Admin</title>
 
   <link rel="stylesheet" href="/css/app.css">
 </head>
@@ -199,7 +199,7 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright © 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright © 2019-2020 <a href="#">Orion Tech Resources</a>.</strong> All rights reserved.
   </footer>
 <div id="sidebar-overlay"></div></div>
 <!-- ./wrapper -->
