@@ -15,7 +15,7 @@
                     <img class="img-circle elevation-3" :src="getProfilePhoto()" style="size:2px;" alt="">
                     
                 </div>
-                <div class="card-footer">
+                <!-- <div class="card-footer">
                     <div class="row">
                     <div class="col-sm-4 border-right">
                         <div class="description-block">
@@ -25,7 +25,7 @@
                         <!-- /.description-block -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-sm-4 border-right">
+                    <!-- <div class="col-sm-4 border-right">
                         <div class="description-block">
                         <h5 class="description-header">13,000</h5>
                         <span class="description-text">FOLLOWERS</span>
@@ -33,17 +33,17 @@
                         <!-- /.description-block -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-sm-4">
+                    <!-- <div class="col-sm-4">
                         <div class="description-block">
                         <h5 class="description-header">35</h5>
-                        <span class="description-text">PRODUCTS</span>
-                        </div>
+                        <span class="description-text">PRODUCTS</span> -->
+                        </div> -->
                         <!-- /.description-block -->
                     </div>
                     <!-- /.col -->
                     </div>
                     <!-- /.row -->
-                </div>
+                </div> -->
                 </div>
             </div>
 

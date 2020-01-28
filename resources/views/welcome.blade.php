@@ -316,7 +316,7 @@
   <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-4">
             <h6>About</h6>
             <p class="text-justify"><i>Orion Tech Resources </i> is an initiative  to help digital marketers find the right market to invest their resources canfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
           </div>
@@ -333,7 +333,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-6 col-md-3">
+          <div class="col-xs-6 col-md-2">
             <h6>Quick Links</h6>
             <ul class="footer-links">
              
@@ -344,13 +344,27 @@
               <li><a href="#">Support</a></li>
             </ul>
           </div>
+
+
+          <div class="col-xs-6 col-md-2">
+            <h6>Location</h6>
+            <a>  No 2 olaogun street gberigbe, Lagos</a>
+          </div>
         </div>
-        <hr>
+
+        <div class="col-xs-6 col-md-4">
+            <h6>Phone</h6>
+            <i class="fas fa-phone-alt"></i>
+            <a>  +234-08139170220</a>
+          </div>
+        
+
+        <hr style="color:red;">
       </div>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
          <a href="#">Orion concepts</a>.
             </p>
           </div>
@@ -414,29 +428,29 @@ IX. Make sure to not place Orion Tech Resources ads on any online auction platfo
 3.     Consensus of Confidentiality Except as otherwise provided in this Agreement or with the consent of Orion Tech Resources, you agree that all information, including, without limitation, the terms of this Agreement, business and financial information, customer and vendor lists, and pricing and sales information, concerning us or any of our affiliates provided by or on behalf of any of them shall remain strictly confidential and secret and shall not be utilized, directly or indirectly, by you for any purpose other than your participation in the Affiliate Program, except and solely to the extent that any such information is generally known or available to the public through a source other than you. Affiliate shall not use any information obtained from the Affiliate Program to develop, enhance or operate a service that competes with the Affiliate Program, or assist another party to do the same. <br>
 4.    Limited License & Intellectual Property We grant you a nonexclusive, nontransferable, revocable right to use the Links and to access our web site through the Links solely in accordance with the terms of this Agreement, for the sole purpose of identifying your Media as a participant in the Affiliate Program and assisting in increasing sales through the Program Web Site.
 You may not alter, modify, manipulate or create derivative works of the Links or any Orion Tech Resources graphics, creative, copy or other materials owned by, or licensed to, Orion Tech Resources in any way. You are only entitled to use the Links to the extent that you are a member in good standing of the Affiliate Program. We may revoke your license anytime by giving you written notice. Except as expressly stated herein, nothing in this Agreement is intended to grant you any rights to any of Orion Tech Resources’s trademarks, service marks, copyrights, patents or trade secrets. You agree that Orion Tech Resources may use any suggestion, comment or recommendation you choose to provide to Orion Tech Resourceswithout compensation. All rights not expressly granted in this Agreement are reserved by Orion Tech Resources. <br>
-5.     Termination
+5.     <b>TERMINATION</b> <br>
 This Agreement shall commence on the date of our approval of your Affiliate Program application and shall continue thereafter until terminated as provided herein. You may terminate your participation in the Affiliate Program at any time by removing all Links from your Media, deleting all copies of the Links. We may terminate your participation in one or more Offers or this Agreement at any time and for any reason which we deem appropriate with or without prior notice to you by disabling the Links or providing you with a written notice. Upon termination of your participation in one or more Offers or this Agreement for any reason, you will immediately cease all use of and delete all Links, plus all Orion Tech Resources or Client intellectual property, and will cease representing yourself as aOrion Tech Resources or Client affiliate for such one or more Offers. All rights to validly accrued payments, causes of action and any provisions, which by their terms are intended to survive termination, shall survive any termination.
-6.     Amendments
+<br>6.     <b>Amendments</b> <br>
 In addition to any other rights and remedies available to us under this Agreement Orion Tech Resources reserves the right to delete any actions submitted through your Links and withhold and freeze any unpaid Commissions or charge back paid Commissions to your account if (i) Orion Tech Resources determines that you have violated this Agreement, (ii) Orion Tech Resources receives any complaints about your participation in the Affiliate Program which Orion Tech Resources reasonably believes to violate this Agreement or (iii) any Qualified Action is later determined to have not met the requirements set forth in this Agreement or on the Affiliate Program. Such withholding or freezing of Commissions, or charge backs for paid Commissions, shall be without regard as to whether or not such Commissions were earned as a result of such breach. In the event of a material breach of this Agreement, Orion Tech Resources reserves the right to disclose your identity and contact information to appropriate law enforcement or regulatory authorities or any third party that has been directly damaged by your actions.
-7.     Counter-Spam Policy
+<br>7.     <b>Counter-Spam Policy</b> <br>
 You must strictly comply with the federal CAN-SPAM Act of 2003 (the "Act"). All emails sent in connection with the Affiliate Program must include the appropriate party's opt-out link. From time to time, we may request - prior to your sending emails containing linking or referencing the Affiliate Program that you submit the final version of your email to Orion Tech Resources for approval by sending it to your Orion Tech Resources representative and upon receiving written approval from Orion Tech Resources of your email the email may be transmitted to third parties.
 It is solely your obligation to ensure that the email complies with the Act. You agree not to rely upon Orion Tech Resources’s approval of your email for compliance with the Act, or assert any claim that you are in compliance with the Act based upon Orion Tech Resources’s approval.
-8.     About Fraud
+<br>8.     <b>About Fraud</b> <br>
 You are expressly prohibited from using any persons, means, devices or arrangements to commit fraud, violate any applicable law, interfere with other affiliates or falsify information in connection with referrals through the Links or the generation of Commissions or exceed your permitted access to the Affiliate Program. Such acts include, but are in no way limited to, using automated means to increase the number of clicks through the Links or completion of any required information, using spyware, using stealware, cookie-stuffing and other deceptive acts or click-fraud. Orion Tech Resources shall make all determinations about fraudulent activity in its sole discretion.
-9.     Representations and Warranties
+<br>9.     <b>Representations and warranties</b> <br>
 You hereby represent and warrant that this Agreement constitutes your legal, valid, and binding obligation, enforceable against you in accordance with its terms and that you have the authority to enter into this Agreement. Subject to the other terms and conditions of this Agreement, Orion Tech Resources represents and warrants that it shall not knowingly violate any law, rule or regulation which is applicable to Orion Tech Resources’s own business operations or Orion Tech Resources’s proprietary products or services.
-10. Modifications
+<br>10.     <b>Modifications</b> <br>
 In addition to any notice permitted to be given under this Agreement, we may modify any of the terms and conditions of this Agreement at any time by providing you with a notification by email. The changes will become effective ten (10) business days after such notice. If the modifications are unacceptable to you, you may terminate this Agreement without penalty solely on the account of such termination within such ten (10) business day period. Your continued participation in this Affiliate Program ten (10) business days after a change notice has been posted will constitute your acceptance of such change. In addition, Orion Tech Resources may change, suspend or discontinue any aspect of an Offer or Link or remove, alter, or modify any tags, text, graphic or banner ad in connection with a Link. Affiliate agrees to promptly implement any request from Orion Tech Resources to remove, alter or modify any Link, graphic or banner ad that is being used by Affiliate as part of the Affiliate Program.
-11. Independent Investigation
+<br>11.     <b>independent Modifications</b> <br>
 You acknowledge that you have read this Agreement and agree to all its terms and conditions. You have independently evaluated the desirability of participating in the Affiliate Program and each Offer and are not relying on any representation, guarantee or statement other than as set forth in this Agreement or on the Affiliate Program.
-12. Mutual Indemnification
+<br>12.     <b>Mutual Indemnnification</b> <br>
 Affiliate hereby agrees to indemnify, defend and hold harmless Orion Tech Resources and Clients and their respective subsidiaries, affiliates, partners and licensors, directors, officers, employees, owners and agents against any and all claims, actions, demands, liabilities, losses, damages, judgments, settlements, costs, and expenses (including reasonable attorneys' fees and costs) based on (i) any failure or breach of this Agreement, including any representation, warranty, covenant, restriction or obligation made by Affiliate herein, (ii) any misuse by Affiliate, or by a party under the reasonable control of Affiliate or obtaining access through Affiliate, of the Links, Offers or Orion Tech Resources or Client intellectual property, or (iii) any claim related to your Media, including but not limited to, the content contained on such Media (except for the Links).
 Orion Tech Resources hereby agrees to indemnify, defend and hold harmless Affiliate and its subsidiaries, affiliates, partners, and their respective directors, officers, employees, owners and agents against any and all claims, actions, demands, liabilities, losses, damages, judgments, settlements, costs, and expenses (including reasonable attorneys' fees and costs) based on a claim that Orion Tech Resources is not authorized to provide you with the Links.
-<br> 13. Disclaimers <br>
+<br>13.     <b>Discliamer</b> <br>
 <h5 style="color:brown;">THE AFFILIATE PROGRAM AND LINKS, AND THE PRODUCTS AND SERVICES PROVIDED IN CONNECTION THEREWITH, ARE PROVIDED TO AFFILIATE "AS IS". EXCEPT AS EXPRESSLY SET FORTH HEREIN, ORION TECH RESOURCES EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING, USAGE, OR TRADE. ORION TECH RESOURCES DOES NOT WARRANT THAT THE AFFILIATE PROGRAM OR LINKS WILL MEET AFFILIATE'S SPECIFIC REQUIREMENTS OR THAT THE OPERATION OF THE AFFILIATE PROGRAM OR LINKS WILL BE COMPLETELY ERROR- FREE OR UNINTERRUPTED. ORION TECH RESOURCES EXPRESSLY DISCLAIMS ANY LIABILITY FOR ANY ACT OR OMISSION OF A CLIENT OR THEIR PRODUCTS OR SERVICES. ORION TECH RESOURCES DOES NOT GUARANTEE THAT AFFILIATE WILL EARN ANY SPECIFIC AMOUNT OF COMMISSIONS.</h5>
-14. Limitation of Liability
+<br>14.     <b> Limitation of Liability</b> <br>
 IN NO EVENT SHALL ORION TECH RESOURCES BE LIABLE FOR ANY UNAVAILABILITY OR INOPERABILITY OF THE LINKS, PROGRAM WEB SITES, TECHNICAL MALFUNCTION, COMPUTER ERROR, CORRUPTION OR LOSS OF INFORMATION, OR OTHER INJURY, DAMAGE OR DISRUPTION OF ANY KIND BEYOND THE REASONABLE CONTROL OF ORION TECH RESOURCES. IN NO EVENT WILL ORION TECH RESOURCES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, PERSONAL INJURY / WRONGFUL DEATH, SPECIAL OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO, LOSS OF PROFITS OR LOSS OF BUSINESS OPPORTUNITY, EVEN IF SUCH DAMAGES ARE FORESEEABLE AND WHETHER OR NOT ORION TECH RESOURCES HAS BEEN ADVISED OF THE POSSIBILITY THEREOF. ORION TECH RESOURCES'S CUMULATIVE LIABILITY TO AFFILIATE, FROM ALL CAUSES OF ACTION AND ALL THEORIES OF LIABILITY, WILL BE LIMITED TO AND WILL NOT EXCEED THE AMOUNTS PAID TO AFFILIATE BY ORION TECH RESOURCES IN COMMISSIONS DURING THE SIX (6) MONTHS IMMEDIATELY PRIOR TO SUCH CLAIM.
-15. Governing Law & Miscellaneous
+<br> 15.  <b> Governing Law & Miscellaneous</b> <br>
 Affiliate shall be responsible for the payment of all attorneys fees and expenses incurred by Orion Tech Resources to enforce the terms of this Agreement. This Agreement contains the entire agreement between Orion Tech Resources and Affiliate with respect to the subject matter hereof, and supersedes all prior and/or contemporaneous agreements or understandings, written or oral. Affiliate agrees that Orion Tech Resources shall not be subject to or bound by any Affiliate insertion order or online terms and conditions that amend, conflict with or supplement this Agreement, regardless of whether Orion Tech Resources "clicks through" or otherwise indicates its acceptance thereof. Affiliate may not assign all or any part of this Agreement without Orion Tech Resources prior written consent. Orion Tech Resources may assign this Agreement at any time with notice to Affiliate. This Agreement will be binding on and will inure to the benefit of the legal representatives, successors and valid assigns of the parties hereto. The provisions of Section 3, 4(b), 6, 7, 8, 12-15 and any accrued payment obligations shall survive the termination of this Agreement. Except as set forth in the "Modifications" section above, this Agreement may not be modified without the prior written consent of both parties. If any provision of this Agreement is held to be void, invalid or inoperative, the remaining provisions of this Agreement shall continue in effect and the invalid portion of any provision shall be deemed modified to the least degree necessary to remedy such invalidity while retaining the original intent of the parties. Each party to this Agreement is an independent contractor in relation to the other party with respect to all matters arising under this Agreement. Nothing herein shall be deemed to establish a partnership, joint venture, association or employment relationship between the parties. No course of dealing nor any delay in exercising any rights hereunder shall operate as a waiver of any such rights. No waiver of any default or breach shall be deemed a continuing waiver or a waiver of any other breach or default.
 By submitting and application to Affiliate Program, you affirm and acknowledge that you have read this Agreement in its entirety and agree to be bound by all of its terms and conditions. If you do not wish to be bound by this Agreement, you should not submit an application to Affiliate Program. If an individual is accessing this Agreement on behalf of a business entity, by doing so, such individual represents that they have the legal capacity and authority to bind such business entity to this Agreement. This Agreement was last revised on 20-06-2016.
 

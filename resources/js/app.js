@@ -27,6 +27,8 @@ Vue.prototype.$gate = new Gate(window.user);
 
 Vue.use(VueRouter)
 
+Vue.component('pagination', require('laravel-vue-pagination'));
+
 
 
 import VueProgressBar from 'vue-progressbar'
@@ -73,10 +75,12 @@ const options = {
 
 
 let routes = [
+  { path: '*', component: require('./components/User.vue').default },
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
     { path: '/developer', component: require('./components/Developer.vue').default },
     { path: '/users', component: require('./components/User.vue').default },
     { path: '/profile', component: require('./components/Profile.vue').default },
+    { path: '*', component: require('./components/NotFound.vue').default },
     
   ]
 
@@ -109,12 +113,19 @@ Vue.component(
     require('./components/passport/AuthorizedClients.vue').default
 );
 
+
+
 Vue.component(
     'passport-personal-access-tokens',
     require('./components/passport/PersonalAccessTokens.vue').default
 );
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+Vue.component(
+  'not-found',
+  require('./components/NotFound.vue').default
+);
 
 
 
@@ -126,7 +137,17 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
-    router
+    router,
+    data:{
+      search: ''
+    },
+
+    methods:{
+      searchIt: _.debounce(()=>{
+        console.log('searching...')
+        Fire.$emit('searching')
+      },1500)
+    }
 });
 
 
