@@ -76,7 +76,7 @@
             <!-- /.box-header -->
             <div class="box-body table-responsive no-padding">
               <table class="table table-hover">
-                <tbody><tr>
+               <tbody ><tr>
                   <th>ID</th>
                   <th>Middle Name</th>
                   <th>First Name</th>
@@ -87,14 +87,14 @@
                   <th>Registered At</th>
                   <th>Modify</th>
                 </tr>
-                <tr v-for="user in users.data" :key="user.id">
+                 <tr v-for="user in users.data" :key="user.id">
                   <td>{{user.id}}</td>
-                  <td>{{user.name}} </td>
+                  <td > <router-link :to="user.path">{{user.name}}</router-link> </td>
                   <td>{{user.firstName}} </td>
                   <td>{{user.lastName}}</td>
                   <td> {{user.phone}}</td>
                   <td> {{user.email}}</td>
-                  <td> {{user.type}}</td>
+                  <td> {{user.type| upText}}</td>
                   <td>{{user.created_at}}</td>
                   
                   <td><a href="#" @click="editUser(user)"><i class='fa fa-edit blue'></i></a>
@@ -486,6 +486,7 @@
 <script>
 import Underscore from 'underscore/underscore.js';
     export default {
+       props:['data'],
         data(){
             return{
               editMode:true,
@@ -508,10 +509,12 @@ import Underscore from 'underscore/underscore.js';
             }
         },
 
+        props:['data'],
+
         methods:{
 
           
-
+          
           getResults(page = 1) {
             axios.get('api/user?page=' + page)
               .then(response => {

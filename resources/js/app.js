@@ -9,6 +9,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import moment from 'moment';
+
 
 
 
@@ -71,6 +73,15 @@ const options = {
   let Fire = new Vue()
   window.Fire = Fire
 
+  // const User = {
+  //   template: `<div>User {{ $route.params.id }}</div>`,
+  //   watch: {
+  //     beforeRouteUpdate (to, from, next) {
+  //       // react to route changes...
+  //     }
+  //   }
+  // }
+
   
 
 
@@ -79,6 +90,7 @@ let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
     { path: '/developer', component: require('./components/Developer.vue').default },
     { path: '/users', component: require('./components/User.vue').default },
+    { path: '/user/:id', component: require('./components/Read.vue').default },
     { path: '/profile', component: require('./components/Profile.vue').default },
     { path: '*', component: require('./components/NotFound.vue').default },
     
@@ -90,6 +102,15 @@ let routes = [
     hashbang:false,
     mode:'history'
   })
+
+  Vue.filter('upText', function(text){
+    
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  });
+
+  Vue.filter('myDate', function(created){
+    return moment(created).format('ll');
+  });
 
 
 /**

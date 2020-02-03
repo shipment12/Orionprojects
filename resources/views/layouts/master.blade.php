@@ -7,6 +7,7 @@
   <title>Orion Tech Resources | Admin</title>
 
   <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body class="sidebar-mini sidebar-collapse" style="height: auto;">
@@ -63,7 +64,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
+         
           <img src="img/profile/{{Auth::user()->photo}}" class="img-circle elevation-2" alt="User Image">
+         
+          
         </div>
         <div class="info">
           <a href="#" class="d-block"style="font-size: large;">
@@ -73,8 +77,17 @@
           {{ Auth::user()->name }}
           </a>
 
+
+          <hr>
+          
+          @can('isAdmin')
+          <a href="#" class="d-block">
+            Total No of Users:-<span class="w3-badge w3-red"> {{(Auth::user()->count() )}}</span>
+          </a>
+          @endcan
          
         </div>
+        
       </div>
 
       <!-- Sidebar Menu -->

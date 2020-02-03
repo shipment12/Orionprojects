@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\support\Facades\Hash;
+use App\Http\Resources\UserResource;
 
 class UserController extends Controller
 {
@@ -23,7 +24,7 @@ class UserController extends Controller
     public function index()
     {
         $this->authorize('isAdmin');
-        return User::latest()->paginate(5);
+        return  UserResource::collection(User::latest()->paginate(5));
     }
 
     /**
@@ -60,6 +61,21 @@ class UserController extends Controller
             'password' => Hash::make($request['password']),
 
         ]);
+    }
+
+
+    public function AdminRole()
+    {
+        $admin = User::where('type', 'admin')->count();
+        return $admin;
+    }
+
+
+
+    public function show(User $user)
+    {
+        
+        return $user;
     }
 
 

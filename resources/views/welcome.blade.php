@@ -346,11 +346,12 @@
           </div>
 
 
-          <div class="col-xs-6 col-md-4">
-            <h6 style="text-align: left;">Contact Us</h6>
-            <p><i class="fa fa-home" aria-hidden="true"></i>  No 2 Olaogun street, Gberigbe, Lagos</p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i>  oriontechresources@gmail.com</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i> +234-0809858175</p>
+          <div class="col-xs-6 col-md-4" id="footercontact">
+            
+            <h6 style="text-align:center;">Contact Us</h6>
+            <p style="text-align:center;"><i class="fa fa-home" aria-hidden="true"></i>  No 2 Olaogun street, Gberigbe, Lagos</p>
+            <p style="text-align:center;"><i class="fa fa-envelope" aria-hidden="true"></i>  oriontechresources@gmail.com</p>
+            <p style="text-align:center;"><i class="fa fa-phone" aria-hidden="true"></i> +234-0809858175</p>
             
           </div>
         </div>

@@ -26,7 +26,7 @@
       <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>
 
      
-      <form method="POST" action="{{ route('password.email') }}">
+      <form method="POST" action="{{ url('/forgot_password') }}">
       @csrf
         <div class="input-group mb-3">
         <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>

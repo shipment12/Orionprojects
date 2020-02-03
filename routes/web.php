@@ -24,5 +24,8 @@ Route::get('/{any?}', function (){
 
 Route::post('welcome', 'MailSendController@send');
 
+// Route::get('/forgot_password', 'Security\ForgotPassword@forgot');
+// Route::post('/forgot_password', 'Security\ForgotPassword@password');
+
 
 
